@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ton_app
+      POSTGRES_PASSWORD: ton_app
+      POSTGRES_DB: ton_app
+    ports:
+      - 5432:5432
